@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@theme{
+    --color-bluehard: #1C444D;
+    --color-bluesoft: #057D8D;
+    --color-yellowhard: #FFA624;
+    --color-yellowsoft: #FFDF1E;
+    --color-blacksoft: #333333;
+    --font-Primary: "Catamaran", sans-serif;
+    --font-Secondary: "Open Sans", "sans-serif";
+}
