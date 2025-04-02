@@ -37,9 +37,6 @@ function ServicesOfHome() {
                         <div>
                             <div className='text-lg text-gray-500 font-Secondary'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem omnis provident obcaecati sequi aut totam, dolor ducimus deserunt nobis enim blanditiis nihil, tempore exercitationem. Quidem mollitia, beatae hello quisquam.</div>
 
-                            <div className='w-full flex justify-end'>
-                                <HomeServicesCard image={img1} title="branding" />
-                            </div>
                         </div>
 
                     </div>

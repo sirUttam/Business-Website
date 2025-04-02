@@ -1,64 +1,41 @@
 import React from 'react'
-import esewaLogo from '../../assets/esewaLogo.jpg'
-import khaltiLogo from '../../assets/khaltiLogo.jpg'
-
+import { FaArrowRightLong } from "react-icons/fa6";
+import SubFooter from './SubFooter';
 
 function Footer() {
   return (
-    <div className='bg-black text-white py-16'>
-      <div className='w-10/12 grid grid-cols-3 mx-auto'>
-      {/* first column */}
-        <div className='flex flex-col gap-4'>
-         <div className='flex flex-col gap-0.5'>
-         <div className='text-2xl font-Primary font-semibold'>Company Logo</div>
-          <div className='font-medium w-5/7 text-base leading-5'>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis magni fuga numquam velit eos.
-          </div>
-         </div>
-          <div className='flex gap-4 items-center'>
-            <span className='h-8 w-15'>
-              <img className='h-full w-full object-cover' src={esewaLogo} alt="" />
-            </span>
-            <span className='h-8 w-15'>
-              <img className='h-full w-full object-cover' src={khaltiLogo} alt="" />
-            </span>
-            
+    <div className='bg-gradient-to-r from-black to-blacksoft pt-30 pb-12 text-white'>
+      <div className='w-11/12 mx-auto'>
+        <div className='flex justify-between'>
 
-          </div>
-        </div>
-
-        {/* second column */}
-       <div className='flex flex-col gap-2 w-full'>
-        <div className='font-semibold font-Primary text-3xl'>
-          Links
-        </div>
-       <div className='flex text-lg font-medium gap-4'>
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Blog</a>
-          <a href="#">Contact</a>
-
-        </div>
-       </div>
-        
-
-        {/* third column */}
-        <div className='flex flex-col gap-4'>
-          <div className='flex flex-col gap-2'>
-            <div className='font-Primary text-2xl font-semibold'>
-              Office Location
-            </div>
-            <div>
-              Butwal, Rupandehi, 9865549270
+          {/* want to deal part */}
+          <div className='flex flex-col gap-4'>
+            <div className='text-5xl font-medium font-Primary text-yellowsoft'>
+              Want to deal with us? Let's Talk
+              </div>
+            <div className='flex gap-16'>
+              <div className='text-2xl text-gray-400 capitalize font-Primary font-medium'>
+                Contact Us
+                </div>
+              <div className='text-3xl text-yellowsoft'>
+                <FaArrowRightLong/>
+              </div>
             </div>
           </div>
 
-          <div className='flex flex-col gap-2'>
-              <input type="email" placeholder='Your Email' className='py-1.5 w-4/5 rounded-3xl px-6 border bg-white text-[#034C53] font-semibold border-[#034C53] outline-0' />
-            <button className='bg-white text-[#034C53] w-fit px-12 py-2.5 text-sm font-semibold uppercase cursor-pointer rounded-3xl'>Submit</button>
+          {/* email box part */}
+          <div className='flex flex-col items-center gap-2'>
+            <div className='text-gray-500 font-Primary font-medium text-2xl'>
+              Send Us Tips and Feedback.
+              </div>
+            <div className='w-[400px] uppercase text-black font-semibold text-xl bg-gradient-to-r from-yellowhard to-yellowsoft overflow-hidden rounded-4xl pr-8'>
+              <input className='px-8 text-lg text-black w-5/7 py-4 outline-none' placeholder='Your Email...' type="email" />
+              <button className='cursor-pointer'>SUBSCRIBE</button>
+            </div>
           </div>
         </div>
+     
+     <SubFooter/>
       </div>
     </div>
   )
