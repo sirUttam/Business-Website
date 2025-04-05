@@ -9,7 +9,7 @@ function HomeServicesCard({image,title}) {
     <div className='h-fit w-full '>
         <div onMouseEnter={()=>setHover(true)} onMouseLeave={()=>setHover(false)}>
 
-        <div className='relative bg-white overflow-hidden shadow-[0_0_20px_rgba(0,0,0,0.4)] h-80 w-full rounded-2xl'>
+        <div className='relative bg-white cursor-pointer overflow-hidden shadow-[0_0_20px_rgba(0,0,0,0.4)] h-80 w-full rounded-2xl'>
             
             {/* image */}
             <img className='h-70 w-full object-cover' src={image} alt="image" />
@@ -19,14 +19,14 @@ function HomeServicesCard({image,title}) {
             </div>
 
             {/* web design text */}
-                <div className='absolute z-20 bottom-6 left-10 flex items-center gap-4'>
+                <div className='absolute z-20 bottom-3 left-10 flex items-center justify-between gap-4'>
 
                     {/* small blue line */}
                 <div className={`${hover?"opacity-0 -translate-y-10":""} transition-all duration-500 ease-in-out  bg-gradient-to-r from-bluehard to-bluesoft h-1 rounded-3xl w-8`}></div>
 
 {/* title and while hover arrow wrapper */}
                <div className='flex relative w-56  justify-between'>
-               <div className={`${hover?"-translate-x-12 text-white -translate-y-8":""} transition-all duration-500  ease-in-out bg-red-400  capitalize font-Primary text-2xl font-semibold`}>
+               <div className={`${hover?"-translate-x-12 text-white -translate-y-8":""} transition-all duration-500  ease-in-out  capitalize font-Primary text-2xl font-semibold`}>
                     {title}
                 </div>
 

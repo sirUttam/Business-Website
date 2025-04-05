@@ -26,7 +26,7 @@ function ContainerServices() {
         },
     ]
   return (
-    <div className='py-25'>
+    <div className='py-25 shadow-lg'>
         <div className='w-11/12 mx-auto flex flex-col items-center gap-30'>
 
         {/* first part */}
@@ -40,7 +40,7 @@ function ContainerServices() {
             </div>
 
             {/* cars section */}
-            <div className='grid grid-cols-3 gap-6 bg-green-600 w-full'>
+            <div className='grid grid-cols-3 gap-6 w-full'>
                 {
                     cardArr.map((val,i)=>{
                         return(
