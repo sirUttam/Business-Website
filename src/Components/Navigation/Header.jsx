@@ -79,15 +79,14 @@ function Header() {
     {/* for mobile responsive menu calling state variable here */}
     {
       menu && (
-        <div className={`fixed top-0 left-0 z-20 transition-all duration-500 delay-75 ease-in-out 
- bg-black text-white w-full ${menu? "h-screen opacity-100": "h-0 opacity-0"} `}>
+        <div className={`fixed top-0 h-screen left-0 z-50 bg-black text-white w-full  `}>
         <div className='text-3xl flex flex-col gap-6 items-center py-10'>
         <div onClick={()=>setMenu(false)} className='border-4 p-2 rounded-full text-3xl text-white'>
         <FaXmark/>
         </div>
         
         {/* nav items */}
-        <div onClick={()=>setMenu(false)} className={`flex flex-col gap-6 items-center ${menu? "opacity-100" : "opacity-0"} `}>
+        <div onClick={()=>setMenu(false)} className={`flex flex-col gap-6 items-center  `}>
           <NavLinks/>
         </div>
         </div>
@@ -96,13 +95,13 @@ function Header() {
     }
 
 
-    <div className={` ${ScrollFix >= 70 ? "top-0 " : "top-5"} transition-all duration-500 ease-in-out   fixed z-10 left-0 w-full`}>
+    <div className={` ${ScrollFix >= 70 ? "top-0 " : "top-5"} transition-all duration-500 ease-in-out   fixed z-40 left-0 w-full`}>
 
 {/* shadow div */}
 <div className={`${ScrollFix ? "" : ""} w-11/12 rounded-2xl mx-auto shadow-2xl  `}>
 
   {/* nav bar */}
-  <nav className='relative z-0 py-3 rounded-2xl px-4 md:px-10 bg-gradient-to-b from-bluehard to-bluesoft text-black flex items-center justify-between'>
+  <nav className='relative  py-3 rounded-2xl px-4 md:px-10 bg-gradient-to-b from-bluehard to-bluesoft text-black flex items-center justify-between'>
     <div className='h-12 w-14'>
       <img className='h-full w-full object-cover' src={logoIMG} alt="" />
     </div>
