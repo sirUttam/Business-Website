@@ -20,12 +20,12 @@ function HomeTeam() {
                <div className='flex items-center flex-col justify-center gap-6'>
                <div className='text-2xl font-Primary font-semibold tracking-[4px] uppercase'><span className='bg-gradient-to-r from-yellowhard to-yellowsoft py-2 pl-6 rounded-tl-xl rounded-bl-xl text-black shadow-[0_0_10px_rgba(0,0,0,0.8)]'>Team</span>Members</div>
 
-<div className='text-2xl w-8/12 font-medium font-Secondary text-center'>
+<div className='text-xl md:text-2xl w-11/12 md:w-8/12 md:font-medium font-Secondary text-center'>
     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore al Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nam nihil rem iste providen.</div>
                </div>
 
                 {/* Team Members */}
-                <div className='grid grid-cols-3 gap-8 '>
+                <div className='grid grid-cols-1 md:grid-cols-3 gap-8 '>
                     {
                         teammembersArr.map((val, i) => {
                             return (

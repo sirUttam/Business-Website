@@ -24,19 +24,19 @@ function HeroHome() {
     <div className='relative shadow-xl text-black bg-[#F8FAFC] h-fit py-35'>
 
       {/* small square design */}
-      <div className='absolute top-45 -left-45 rotate-45 z-5 opacity-90 bg-gradient-to-b from-bluehard to-bluesoft h-90 w-90'></div>
+      <div className='hidden md:flex absolute top-45 -left-45 rotate-45 z-5 opacity-90 bg-gradient-to-b from-bluehard to-bluesoft h-90 w-90'></div>
 
       {/* big square design */}
-      <div className='absolute top-35 -left-55 rotate-45 z-0 opacity-80 bg-gradient-to-b from-bluehard to-bluesoft h-110 w-110'></div>
+      <div className='hidden md:flex absolute top-35 -left-55 rotate-45 z-0 opacity-80 bg-gradient-to-b from-bluehard to-bluesoft h-110 w-110'></div>
       
-      <div className='grid w-11/12 mx-auto grid-cols-2'>
+      <div className='grid w-11/12 mx-auto grid-cols-1 md:grid-cols-2'>
 
         {/* first column */}
-        <div className='flex pt-12 z-10 flex-col gap-8 h-full'>
-          <div className='text-6xl tracking-wide w-11/12 leading-18 font-Primary font-semibold'>
+        <div className='flex order-2 md:order-1 pt-12 z-10 flex-col gap-8 h-full'>
+          <div className='text-3xl md:text-6xl tracking-wide w-11/12 text-center md:text-left md:leading-18 font-Primary font-semibold'>
             Lorem ipsum dolor sit amet consectetur aing elit helos init.
           </div>
-          <div className='text-lg font-medium w-11/12 font-Secondary'>
+          <div className='text-lg text-center md:text-left font-medium w-11/12 font-Secondary'>
             Send heartfelt gifts to your loved ones without them knowing. We deliver the surprise, capture their priceless reaction, and share it with you!
           </div>
           <div className='flex items-center gap-4'>
@@ -72,8 +72,8 @@ function HeroHome() {
         </div>
 
         {/* second column */}
-        <div className='h-[500px] p-4 bg-gradient-to-r from-yellowhard to-yellowsoft rounded-tl-[200px] rounded-br-[200px] w-[650px]'>
-          <img className='w-full h-full object-cover rounded-tl-[200px] rounded-br-[200px]' src={heroIMG} alt="" />
+        <div className='h-[300px] md:h-[500px] order-1 md:order-2 p-4 bg-gradient-to-r from-yellowhard to-yellowsoft rounded-tl-[100px] md:rounded-tl-[200px] rounded-br-[100px] md:rounded-br-[200px] w-full md:w-[650px]'>
+          <img className='w-full h-full object-cover rounded-tl-[100px] md:rounded-tl-[200px] rounded-br-[100px] md:rounded-br-[200px]' src={heroIMG} alt="" />
         </div>
       </div>
 

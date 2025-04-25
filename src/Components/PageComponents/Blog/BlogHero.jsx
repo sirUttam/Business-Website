@@ -16,7 +16,7 @@ function BlogHero() {
     ]
   return (
     <div className='w-11/12 mx-auto'>
-        <div className='grid grid-cols-2 gap-8'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
             {
                 blogCardArr.map((val,i)=>{
                     return(

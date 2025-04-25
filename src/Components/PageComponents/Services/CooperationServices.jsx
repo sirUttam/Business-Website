@@ -3,18 +3,18 @@ import business from '../../../assets/business.jpg'
 function CooperationServices() {
   return (
     <div className='py-20 h-fit'>
-        <div className='relative h-[650px]'>
+        <div className='relative h-[450px] md:h-[650px]'>
             <img className='relative h-full w-full object-cover' src={business} alt="image" />
 
             {/* absolute div container */}
-            <div className='absolute w-fit right-2 top-30 rounded-2xl  bg-gradient-to-r from-bluehard to-bluesoft'>
-                <div className='flex flex-col gap-8 px-12 py-16 max-w-[800px] '>
-                <div className='text-2xl font-Primary font-semibold tracking-[4px] text-white uppercase'><span className='bg-gradient-to-r from-yellowhard to-yellowsoft py-2 pl-6 rounded-tl-xl rounded-bl-xl mr-1 text-black shadow-[0_0_10px_rgba(13, 82, 129,0.8)'>coo</span>peration</div>
+            <div className='absolute w-fit right-0 md:right-2 top-10 md:top-30 rounded-2xl  bg-gradient-to-r from-bluehard to-bluesoft'>
+                <div className='flex flex-col gap-6 md:gap-8 px-4 md:px-12 py-12 md:py-16 max-w-[800px] '>
+                <div className='text-lg md:text-2xl font-Primary font-semibold tracking-[4px] text-white uppercase'><span className='bg-gradient-to-r from-yellowhard to-yellowsoft py-2 pl-6 rounded-tl-xl rounded-bl-xl mr-1 text-black shadow-[0_0_10px_rgba(13, 82, 129,0.8)'>coo</span>peration</div>
 
 
-                <div className='flex flex-col gap-4'>
-                    <div className='uppercase text-5xl text-white font-bold'>START PROJECT WITH US ?</div>
-                    <div className='text-lg w-5/7 text-gray-300 font-Secondary'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec r, Mit Malesuada Non Leo A, Vehicula Ornare Nibh.</div>
+                <div className='flex flex-col gap-2 md:gap-4'>
+                    <div className='uppercase text-2xl md:text-5xl text-white font-bold'>START PROJECT WITH US ?</div>
+                    <div className='text-lg md:w-5/7 text-gray-300 font-Secondary'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec r, Mit Malesuada Non Leo A, Vehicula Ornare Nibh.</div>
                 </div>
                 
                 <button className="mt-4 w-fit shadow-[0_0_10px_rgba(225,225,29,0.8)] relative px-12 py-3 rounded-3xl text-black uppercase cursor-pointer overflow-hidden group">

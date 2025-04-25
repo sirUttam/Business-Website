@@ -27,20 +27,20 @@ function ContainerServices() {
     ]
   return (
     <div className='py-25 shadow-lg'>
-        <div className='w-11/12 mx-auto flex flex-col items-center gap-30'>
+        <div className='w-11/12 mx-auto flex flex-col items-center gap-15 md:gap-30'>
 
         {/* first part */}
-            <div className='grid grid-cols-2 '>
-                <div className='text-5xl flex flex-col gap-6 w-6/7 leading-14 capitalize font-Primary font-medium'>
+            <div className='grid grid-cols-1 gap-6 md:gap-0 md:grid-cols-2 '>
+                <div className='text-4xl md:text-5xl flex flex-col gap-6 md:w-6/7 md:leading-14 capitalize font-Primary font-medium'>
                     We are the leader in for our services
-                    <div className='bg-gray-300 h-1.5 w-2/7 rounded-3xl'></div>
+                    <div className='bg-gray-300 h-1.5 w-3/7 flex self-center md:self-start md:w-2/7 rounded-3xl'></div>
                     </div>
-                <div className='font-Secondary text-lg font-medium text-gray-600'>
+                <div className='font-Secondary text-center md:text-start text-lg font-medium text-gray-600'>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, cupiditate placeat, exercitationem voluptas in quos dolores, harum saepe quia nihil doloribus earum error asperiores repudiandae esse ipsum eveniet accusamus hic ab dolor dicta! Autem in quo voluptates, rem assumenda pariatur.</div>
             </div>
 
             {/* cars section */}
-            <div className='grid grid-cols-3 gap-6 w-full'>
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-6 w-full'>
                 {
                     cardArr.map((val,i)=>{
                         return(

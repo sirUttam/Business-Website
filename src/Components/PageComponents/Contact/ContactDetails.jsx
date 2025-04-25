@@ -14,13 +14,13 @@ function ContactDetails() {
         },
     ]
   return (
-    <div className='h-fit bg-gray-100 py-20 mb-30'>
-<div className='w-11/12 mx-auto flex  justify-between'>
+    <div className='h-fit bg-gray-100 py-20 mb-10 md:mb-30'>
+<div className='w-11/12 md:w-10/12 mx-auto flex flex-col md:flex-row gap-16 md:gap-0 justify-between '>
 {
     contactArr.map((val,i)=>{
         return(
             <div key={i}>
-              <div className='flex flex-col gap-4 items-center group'>
+              <div className='flex text-center md:text-start flex-col gap-2 md:gap-4 items-center group'>
               <div className='text-7xl transition-all duration-500 delay-75 ease-in-out group-hover:skew-2 text-bluesoft group-hover:scale-105 group-hover:rotate-12'>
                     {val.icon}
                 </div>

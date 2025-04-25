@@ -23,16 +23,16 @@ function ServicesOfHome() {
         <div className='py-30 bg-[#F6F6F6] h-fit'>
 
             {/* div for flex for whole section and button(all services) */}
-            <div className='flex flex-col gap-20 items-center'>
-                <div className='grid grid-cols-5 gap-14 w-11/12 mx-auto'>
+            <div className='flex flex-col gap-14 md:gap-20 items-center'>
+                <div className='grid grid-cols-1 md:grid-cols-5 md:gap-14 w-11/12 mx-auto'>
 
                     {/* first column */}
-                    <div className='flex col-span-2 flex-col gap-10 justify-center'>
+                    <div className='flex md:col-span-2 text-center md:text-left flex-col gap-6 md:gap-10 justify-center'>
                         <div className='text-2xl font-Primary font-semibold tracking-[4px] uppercase'><span className='bg-gradient-to-r from-bluehard to-bluesoft py-2 pl-6 rounded-tl-xl rounded-bl-xl text-white shadow-[0_0_10px_rgba(0,0,0,0.8)]'>Our</span>services</div>
 
-                        <div className='text-5xl font-semibold leading-14'>Lorem ipsum dolor hello hsiteo sit.</div>
+                        <div className='text-4xl md:text-5xl font-semibold md:leading-14'>Lorem ipsum dolor hello hsiteo sit.</div>
                         {/* bottom small line */}
-                        <div className='h-1.5 w-2/7 bg-gray-300 rounded-2xl'></div>
+                        <div className='h-1.5 w-2/7 flex self-center md:self-start bg-gray-300 rounded-2xl'></div>
 
                         <div>
                             <div className='text-lg text-gray-500 font-Secondary'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem omnis provident obcaecati sequi aut totam, dolor ducimus deserunt nobis enim blanditiis nihil, tempore exercitationem. Quidem mollitia, beatae hello quisquam.</div>
@@ -42,7 +42,7 @@ function ServicesOfHome() {
                     </div>
 
                     {/* second column */}
-                    <div className='col-span-3 grid gap-6 pt-14 grid-cols-2'>
+                    <div className='md:col-span-3 grid gap-6 pt-14 grid-cols-1 md:grid-cols-2'>
                         {
                             cardArr.map((val, i) => {
                                 return (

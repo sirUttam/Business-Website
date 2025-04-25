@@ -3,12 +3,12 @@ import contactIMG from '../../../assets/contactIMG.jpg'
 
 function ContactHero() {
   return (
-    <div className='h-fit mb-30 w-full'>
-        <div className='w-11/12 mx-auto grid grid-cols-2 gap-12'>
+    <div className='h-fit w-full'>
+        <div className='w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-12'>
 
             {/* form section */}
             {/* ////////////////////////////////////////////////// */}
-            <div className='flex flex-col gap-12'>
+            <div className='flex order-2 md:order-1 flex-col gap-12'>
                 {/* title part */}
             <div className='text-2xl font-Primary font-semibold tracking-[4px] uppercase'><span className='bg-gradient-to-r from-bluehard to-bluesoft py-2 pl-6 rounded-tl-xl rounded-bl-xl text-white shadow-[0_0_10px_rgba(0,0,0,0.8)]'>Cont</span>act Us</div>
 
@@ -30,7 +30,7 @@ function ContactHero() {
             </div>
 
             {/* image */}
-            <div className='w-full rounded-lg overflow-hidden h-auto'>
+            <div className='w-full order-1 md:order-2 rounded-lg overflow-hidden h-auto'>
                 <img className='h-full w-full object-cover' src={contactIMG} alt="image" />
             </div>
         </div>
