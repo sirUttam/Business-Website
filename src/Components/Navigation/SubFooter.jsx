@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { BiUpArrowAlt } from "react-icons/bi";
 import { FaRegCopyright } from "react-icons/fa6";
 
@@ -20,7 +20,7 @@ function SubFooter() {
 
             {/* copyright */}
           <div className='relative'>
-            <div className='absolute transition-all ease-in-out duration-300 delay-75 cursor-pointer right-0 bottom-0 rounded-full h-10 w-10 bg-white text-yellowhard flex justify-center items-center text-2xl hover:bg-yellowhard hover:text-white'>
+            <div onClick={()=>window.scrollTo({top:0, behavior:'smooth'})} className='absolute transition-all ease-in-out duration-300 delay-75 cursor-pointer right-0 bottom-0 rounded-full h-10 w-10 bg-white text-yellowhard flex justify-center items-center text-2xl hover:bg-yellowhard hover:text-white'>
                 <BiUpArrowAlt/>
             </div>
           <div className='flex text-lg justify-center items-center gap-1 text-gray-400'>

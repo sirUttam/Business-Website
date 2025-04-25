@@ -30,7 +30,7 @@ function Footer() {
               </div>
             <div className='w-[400px] uppercase text-black font-semibold text-xl bg-gradient-to-r from-yellowhard to-yellowsoft overflow-hidden rounded-4xl pr-8'>
               <input className='px-8 text-lg text-black w-5/7 py-4 outline-none' placeholder='Your Email...' type="email" />
-              <button className='cursor-pointer'>SUBSCRIBE</button>
+              <button type='submit' className='cursor-pointer'>SUBSCRIBE</button>
             </div>
           </div>
         </div>
